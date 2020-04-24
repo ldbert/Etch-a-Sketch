@@ -1,13 +1,37 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="css/etch.css">
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <meta content="utf-8" http-equiv="encoding">
+ 
+<link rel="stylesheet" type="text/css" href="etch.css">
+<title>Etch-a-Sketch</title>
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<div id= "container"></div>
+  <center>
+    <div id="header"><h1>Etch a Sketch</h1></div>
+    
+    <div id="buttons">
+      <div></div>
 
+      <div id="gridSizeBtns"> 
+        <button type="button" class="btn btn1" id="sizeBtn" onclick="changeGridSize()">Change size</button> 
+      </div>
 
-<script type="text/javascript" src="js/etch.js"></script>
+      <div id="gridRandomColor"> 
+        <button type="button" class="btn btn1" id="myBtn" onclick="drawRandomColors()">Change color</button>
+      </div>
+
+      <div></div>
+    </div>
+
+    <div id="container" class="grid"></div>
+
+  </center>
+
+  <script type="text/javascript" src="etch.js"></script>
+
 </body>
 </html> 
