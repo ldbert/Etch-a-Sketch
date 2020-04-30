@@ -6,7 +6,7 @@ var newGridSize;
     
     // function returning the new size of the grid from user input  
     function getNewSize(){
-      newGridSize = prompt("How many squares per side would you like in the new grid?");
+      newGridSize = prompt("Enter number of cells required per side, max 64, thank you.");
       return newGridSize;
     }
 
